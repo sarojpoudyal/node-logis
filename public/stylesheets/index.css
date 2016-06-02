@@ -1,0 +1,61 @@
+.banner{
+  margin-bottom: 2em;
+}
+#block{
+  margin-top: 2em
+}
+#block h2{
+  font-size: 21px;
+  text-align: center;
+  padding: 1em;
+  margin: 1em;
+}
+#block p{
+  text-align: center;
+    color: #9c9c9c;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    margin-top: 1em;
+    padding: 1em;
+    font-family: "Nova Round",cursive;
+}
+.track form{
+  text-align: center;
+
+}
+.track input{
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 1px solid #ff7148;
+    color: #9c9c9c;
+    outline: medium none;
+    padding: 10px;
+    width: 75%;
+
+}
+.track input[type=submit]{
+  background: #1b1a15 none repeat scroll 0 0;
+   border: 1px double #fff;
+   color: #9c9c9c;
+   cursor: pointer;
+   font-size: 15px;
+   letter-spacing: 2px;
+   margin: 15px 0 0;
+   outline: medium none;
+   padding: 9px 30px;
+   text-transform: uppercase;
+}
+.track input[type=submit]:hover{
+  background: #ff7148 none repeat scroll 0 0;
+    border: 1px double #ff7148;
+    color: #fff;
+    transition: all 0.5s ease 0s;
+}
+footer{
+  margin-top: 2rem;
+  
+}
+
+
+@media(max-width:320px){
+
+}

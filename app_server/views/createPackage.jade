@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1= title
+  h3 Send a Package
+  form
+    p Send to:
+    textarea(name="address" rows="10" cols="30")
+    input(type="submit" value="Send")

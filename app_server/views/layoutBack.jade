@@ -1,0 +1,43 @@
+doctype html
+html
+  head
+    meta(name='viewport', content="width=device-width, initial-scale=1")
+    title= title
+    link(rel="stylesheet", href='/bootstrap/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/styleBack.css')
+  body
+    .header
+      nav(class="navbar navbar-default")
+        .container
+
+          .navbar-header
+            button(type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1")
+              span.sr-only Toggle navigation
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+
+            h1
+              a(href="/") LOGIS
+
+
+          .collapse.navbar-collapse#bs-example-navbar-collapse-1
+            ul.nav.navbar-nav.navbar-right
+              li
+                a(href="") Ramesh Agrawal
+              li
+                a(href="/vendor") Logout
+          .clearfix
+
+
+
+    block content
+    footer
+      .row
+        .col-xs-12(align="center")
+          small &copy; Logis 2016
+
+    script(src="/javascripts/jquery.js")
+    script(src="/bootstrap/js/bootstrap.min.js")
+    script(src="/javascripts/custom.js")

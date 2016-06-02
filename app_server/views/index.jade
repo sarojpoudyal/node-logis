@@ -1,5 +1,65 @@
-extends layout
+doctype html
+html
+  head
+    meta(name='viewport', content="width=device-width, initial-scale=1")
+    title= title
+    link(rel="stylesheet", href='/bootstrap/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/index.css')
+  body
+  .banner
+    .header
+      nav(class="navbar navbar-default")
+        .container
 
-block content
-  h1= title
-  p Welcome to #{title}
+          .navbar-header
+            button(type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1")
+              span.sr-only Toggle navigation
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+
+            h1
+              a(href="/") LOGIS
+
+
+          .collapse.navbar-collapse#bs-example-navbar-collapse-1
+            ul.nav.navbar-nav.navbar-right
+              li
+                a(href="/vendor") Login
+              li
+                a(href="/vendor") Signup
+          .clearfix
+    .banner-text
+          ul
+            li
+              h2 We Give the best <br>solutions for Improvement
+              p Lorem ipsum dolor sit amet, consectetur adipi est.
+
+
+
+
+  .container#block
+    .row
+      .col-md-4
+        .track
+          h2 Track Package
+          form
+              input(type="text" placeholder="Transaction ID")
+              br
+              input(type="submit" value="Track")
+      .col-md-8
+        h2 About Us
+        p Lorem ipsum dolor sit amet, consectetur adipi est,Lorem ipsum dolor sit amet, consectetur adipi est. Lorem ipsum dolor sit amet, consectetur adipi est,Lorem ipsum dolor sit amet, consectetur adipi est.Lorem ipsum dolor sit amet, consectetur adipi est,Lorem ipsum dolor sit amet, consectetur adipi est,Lorem ipsum dolor sit amet, consectetur adipi est,Lorem ipsum dolor sit amet, consectetur adipi est.
+
+
+
+
+
+    footer
+            .row
+              .col-xs-12(align="center")
+                small &copy; Logis 2016
+
+          script(src="/javascripts/jquery.js")
+          script(src="/bootstrap/js/bootstrap.min.js")

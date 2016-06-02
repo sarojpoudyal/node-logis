@@ -1,0 +1,50 @@
+extends layoutBack
+
+block content
+
+  .container
+    h1.page-header= title
+    .row
+      .col-md-9
+        .tabs
+          ul.tab-links
+            li.active
+              a(href="#incoming") Incoming
+            li
+              a(href="#outgoing") Outgoing
+          .tab-content
+            #incoming.tab.active
+              ul.package-lists
+                li
+                  a(href="/package/display") Transaction Id: 232j2ijikn
+                li From: Address:nskjdnjkhn ink
+              ul.package-lists
+                li
+                  a(href="/package/display") Transaction Id: 232j2ijikn
+                li From: Address:nskjdnjkhn ink
+            #outgoing.tab
+              ul.package-lists
+                li
+                  a(href="/package/display") Transaction Id: 232j2ijikn
+                li From: Address:nskjdnjkhn inkOiuenfwkj
+              ul.package-lists
+                li
+                  a(href="/package/display") Transaction Id: 232j2ijikn
+                li From: Address:nskjdnjkhn inkdskhkdshfkjdsh
+              ul.package-lists
+                li
+                  a(href="/package/display") Transaction Id: 232j2ijikn
+                li From: Address:nskjdnjkhn inkdskhkdshfkjdsh
+
+      .col-md-3
+        ul.action
+          li
+            a(href="/package/new") Send a new Package
+          li
+            a(href="#") Track Package
+          li
+            a(href="#") Edit Account
+          li
+            a(href="#") View History
+          li
+            a(href="#") Payments
