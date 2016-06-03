@@ -1,9 +1,25 @@
-extends layout
+extends layoutBack
 
 block content
-  h1= title
-  h3 Send a Package
-  form
-    p Send to:
-    textarea(name="address" rows="10" cols="30")
-    input(type="submit" value="Send")
+  h1.page-header= pageHeader
+  .container
+    h3 Send a Package
+    p Reccivers Information
+    form
+      .form-group
+        label Street
+        input(type="text")
+      .form-group
+        label City/Town
+        input(type="text")
+      .form-group
+        label District
+        input(type="text")
+      .form-group
+        label State
+        input(type="text")
+      .form-group
+        label PIN
+        input(type="text")
+      .form-group
+        input(type="submit" value="Send")

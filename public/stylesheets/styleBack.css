@@ -74,8 +74,54 @@ li.active{
   box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15);
   margin: 20px 0;
   padding: 10px;
+  transition: all ease .2s;
+  border-radius: 4px;
 }
-
+.package-lists ul{
+  width: inherit;
+  height: inherit;
+}
+.package-lists:hover{
+  background: #555145;
+  color: #fff;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+}
+.package-lists li a{
+  width: 100%;
+}
+.package-lists:hover li{
+  color: #fff;
+}
+.action{
+  list-style: none;
+  padding: 2rem;
+  font-size: 1.5rem;
+}
+.action li{
+  padding:9px 15px;
+}
+.action li a{
+  width: 100%;
+  padding: 1rem;
+}
+.action li a:hover{
+  background: #555145;
+  color: #fff;
+}
+.transaction{
+  padding: 1rem;
+}
+.transaction tr{
+  margin: 2rem auto;
+}
+.transaction th{
+  padding-right: 1rem;
+  padding-bottom: 2rem;
+}
+.transaction td{
+  padding-bottom: 2rem;
+  padding-right: .5rem;
+}
 
 footer{
   margin-top: 2rem;

@@ -1,27 +1,32 @@
 extends layoutBack
 
 block content
-  h1= title
+  h1.page-header= pageHeader
   .container
     .row
       .col-md-6
-        h3 Transaction ID: fkjndsngdslbgk kdsk
-        table
+        table.transaction
+          tr
+            th Transaction ID
+            td= transactionDetails.id
           tr
             th Transaction Started:
-            td 02/11/2018
+            td= transactionDetails.initialDateDispatched
           tr
             th Initial address
-            td Adress of the Initial vendor
+            td= transactionDetails.initialAddress
           tr
             th Reccivers address
-            td Adress where the package is actually intended to
-          tr
-            th Current Sender
-            td Address of Current Sender
+            td= transactionDetails.recciverAddress
           tr
             th Date dispacched by previous vendor
-            td 21/12/1019
+            td= transactionDetails.currentDateDispatched
+          tr
+            th Current Sender
+            td= transactionDetails.currentSender
           tr
             th Current Recciver
-            td Address of the vendor that the package is currently intended to
+            td= transactionDetails.currentRecciver
+      .col-md-6
+        .transaction-map
+          img(class="img-responsive" src="../images/a.jpg")

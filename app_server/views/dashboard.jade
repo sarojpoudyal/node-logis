@@ -3,7 +3,7 @@ extends layoutBack
 block content
 
   .container
-    h1.page-header= title
+    h1.page-header= pageHeader
     .row
       .col-md-9
         .tabs
@@ -14,28 +14,22 @@ block content
               a(href="#outgoing") Outgoing
           .tab-content
             #incoming.tab.active
-              ul.package-lists
-                li
-                  a(href="/package/display") Transaction Id: 232j2ijikn
-                li From: Address:nskjdnjkhn ink
-              ul.package-lists
-                li
-                  a(href="/package/display") Transaction Id: 232j2ijikn
-                li From: Address:nskjdnjkhn ink
+              each transaction in transactionIn
+                .package-lists
+                  ul
+                    li
+                      a(href="/package/display") Transaction Id: #{transaction.id}
+                    li From: #{transaction.address}
+                    li Date: #{transaction.dateDispatched}
             #outgoing.tab
-              ul.package-lists
-                li
-                  a(href="/package/display") Transaction Id: 232j2ijikn
-                li From: Address:nskjdnjkhn inkOiuenfwkj
-              ul.package-lists
-                li
-                  a(href="/package/display") Transaction Id: 232j2ijikn
-                li From: Address:nskjdnjkhn inkdskhkdshfkjdsh
-              ul.package-lists
-                li
-                  a(href="/package/display") Transaction Id: 232j2ijikn
-                li From: Address:nskjdnjkhn inkdskhkdshfkjdsh
-
+              each transaction in transactionOut
+                .package-lists
+                  ul
+                    li
+                      a(href="/package/display") Transaction Id: #{transaction.id}
+                    li To: #{transaction.address}
+                    li Date: #{transaction.dateDispatched}
+              
       .col-md-3
         ul.action
           li
